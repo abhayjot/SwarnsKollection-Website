@@ -1,5 +1,5 @@
 {
-  "name": "create-react-app-example",
+  "name": "swarnkollection-website",
   "version": "0.1.0",
   "scripts": {
     "start": "react-scripts start",
@@ -16,5 +16,7 @@
   },
   "devDependencies": {
     "react-cosmos": "^5.0.0-beta.15"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }
