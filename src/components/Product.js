@@ -3,7 +3,6 @@ import { Card, Button } from "react-bootstrap";
 
 function Product(props) {
   let { product } = props;
-  console.log(product);
 
   return (
     <Card style={{ width: "18rem" }}>
