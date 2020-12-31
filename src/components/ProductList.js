@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Product from "./Product.js";
-import { Spinner } from "react-bootstrap";
+import { Spinner, Row } from "react-bootstrap";
 import Error from "./Error.js";
+import "../App.css";
 
 function ProductList(props) {
   const [productname, setproductname] = useState("");
@@ -30,13 +31,21 @@ function ProductList(props) {
   return (
     <div>
       <p>You clicked on {productname}</p>
-      {isloading ? (
-        <Spinner animation="border" />
-      ) : (
-        productdata.data.map((product) => (
-          <Product key={product.itemId} product={product} />
-        ))
-      )}
+      <Row
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          margin: "0.05em"
+        }}
+      >
+        {isloading ? (
+          <Spinner animation="border" />
+        ) : (
+          productdata.data.map((product) => (
+            <Product key={product.itemId} product={product} />
+          ))
+        )}
+      </Row>
     </div>
   );
 }
