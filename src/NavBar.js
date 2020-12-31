@@ -34,6 +34,8 @@ function Navigation() {
               Jhangras
             </NavDropdown.Item>
           </NavDropdown>
+
+          <Nav.Link href="/aboutus"> About Us </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
