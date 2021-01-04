@@ -35,7 +35,7 @@ function Navigation() {
             </NavDropdown.Item>
           </NavDropdown>
 
-          <Nav.Link href="/aboutus"> About Us </Nav.Link>
+          <Nav.Link href="/contactus"> Contact Us </Nav.Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

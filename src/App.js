@@ -5,7 +5,7 @@ import Home from "./components/Home.js";
 import ProductList from "./components/ProductList.js";
 import Error from "./components/Error.js";
 import Navigation from "./NavBar.js";
-import AboutUs from "./components/AboutUs.js";
+import Contactus from "./components/Contactus.js";
 
 class App extends Component {
   render() {
@@ -17,7 +17,7 @@ class App extends Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/product/:name" component={ProductList} />
-            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/contactus" component={Contactus} />
             <Route component={Error} />
           </Switch>
         </div>
